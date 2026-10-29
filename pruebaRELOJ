@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	class Reloj{
+		private:
+			int horas,minutos,segundos;
+			int bateria;
+		public :
+			Reloj(int h, int m , int s ,int b);
+			bool ajustarHora(int h, int m, int s);
+			
+			int getHora();
+			int getMinutos();
+			int getSegundos();
+			int getBateria();
+			
+			void tic_tac();
+			void avanza(int h, int m , int s);
+			void atrasa(int h, int m , int s);
+			
+			bool estaParado();
+			void recargaBateria(int b);
+			
+			void horaFormato12n();
+			void horaFormato24h();
+	};
+	 	
+}
